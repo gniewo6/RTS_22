@@ -1,0 +1,17 @@
+x=1
+iloscpetli=9000
+print("P", end=".")
+print("P.S. a ja tylko ją obciążam by wysłać ci te vitony")
+for i in range(iloscpetli):
+    print("P", end=".")
+    for i in range(x):
+        print("P", end=".")
+    print("S.", end=" ")
+    for i in range(x):
+        print("Post", end="")
+    print("scriptum jest takim pisaniem", end=" ")
+    for i in range(x):
+        print("o pisaniu", end=" ")
+    print("\n", end="")    
+    x=x+1
+print("Ultima Postscriptum niechcąc obciążać tego maila oraz siebie napisałem program w pythonie, który pokazuje moje zapętlenie")
