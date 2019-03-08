@@ -1,0 +1,44 @@
+import turtle
+import random
+import time
+
+color1="#2C3EDE"
+color2="#2CC0DE"
+color3="#732CDE"
+turtle.screensize(canvwidth=1200, canvheight=600, bg=None)
+screen = turtle.Screen()
+#screen.bgcolor("black")
+for q in range(100):
+    turtlepower = []
+
+    turtle.tracer(0, 0)
+    x = random.randrange(24,90)#długość odcinka
+    idx=x
+    y= random.randrange(3,180)#kąt
+    xx= 33 #ilość figur
+    xy= random.randrange(1,20)
+    kk= turtle.Turtle()
+    print("x=",x," y=",y," xy=",xy)
+    for r in range(xx):
+        for i in range(xy):
+            kk.speed(0)
+            kk.color(color1)
+            kk.forward(x)
+            kk.left(y)
+            kk.color(color2)
+            kk.forward(x)
+            kk.left(y)
+            kk.color(color3)
+            kk.forward(x)
+            kk.left(y)
+        kk.forward(x)
+        x= x*1.12
+        #xy=xy+2
+
+    for i in range(1000):
+        turtle.stamp()
+    c=".eps"
+    turtle.update()
+    turtle.getscreen().getcanvas().postscript(file=(idx, y, xy,c))
+    time.sleep(1)
+    turtle.resetscreen()
