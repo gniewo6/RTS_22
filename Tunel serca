@@ -1,0 +1,34 @@
+import turtle
+kk= turtle.Turtle()
+kk.right(90)
+x=3
+xx=57
+kk.penup()
+kk.forward(10)
+kk.pendown()
+    
+kk.speed(100)
+for i in range(xx):
+    
+    kk.color("#9946CA")
+    kk.begin_fill()
+    kk.left(144)
+    kk.forward((x*2.618))
+    kk.left(72)
+    kk.forward(x)
+    kk.left(72)
+    kk.forward(x)
+    kk.right(36)
+    kk.forward(x)
+    kk.left(72)
+    kk.forward(x)
+    kk.left(72)
+    kk.forward((x*2.618))
+    
+    kk.right(36)
+    kk.penup()
+    kk.forward((x*0.33))
+    kk.pendown()
+    
+    x=x*1.2
+turtle.done()
